@@ -8,6 +8,10 @@ class NewsletterForm extends Component {
     success: undefined
   };
 
+  paymentHandler = (details, data) => {
+    console.log(details, data);
+  };
+
   registerEmail = emailAddress => {
     const email = emailAddress;
     axios
@@ -79,6 +83,11 @@ class NewsletterForm extends Component {
             </p>
           </div>
         )}
+        <PayPalBtn
+          amount={1}
+          currency={"USD"}
+          onSucceess={this.paymentHandler}
+        />
       </div>
     );
   }
