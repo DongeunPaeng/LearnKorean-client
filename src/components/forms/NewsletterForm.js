@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import classnames from "classnames";
 import emailjs from "emailjs-com";
 import axios from "axios";
+import PayPalBtn from "../layout/PayPalButton";
 
 class NewsletterForm extends Component {
   state = {
