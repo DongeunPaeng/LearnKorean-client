@@ -16,4 +16,4 @@ class PayPalBtn extends React.Component {
     );
   }
 }
-export default PayPaylBtn;
+export default PayPalBtn;
