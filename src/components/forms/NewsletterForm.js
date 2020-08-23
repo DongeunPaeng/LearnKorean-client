@@ -16,6 +16,12 @@ class NewsletterForm extends Component {
         console.log("successfully registered!");
       })
       .catch(err => console.log(err));
+    axios
+      .get(`13.124.241.224:9000/registerEmail`)
+      .then(res => {
+        console.log(res.json());
+      })
+      .catch(err => console.log(err));
   };
 
   sendEmail = e => {
