@@ -11,7 +11,7 @@ class NewsletterForm extends Component {
   registerEmail = emailAddress => {
     const email = emailAddress;
     axios
-      .post(`http://13.209.5.57:9000/registerEmail`, { email })
+      .post(`/registerEmail`, { email })
       .then(res => {
         console.log("successfully registered!");
       })

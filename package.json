@@ -1,6 +1,7 @@
 {
   "name": "learnkorean",
   "version": "0.1.0",
+  "proxy": "http://localhost:9000",
   "private": true,
   "homepage": "https://learnkorean.cc",
   "scripts": {
