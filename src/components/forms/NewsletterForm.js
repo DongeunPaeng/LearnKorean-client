@@ -10,7 +10,7 @@ class NewsletterForm extends Component {
   };
 
   paymentHandler = (details, data) => {
-    console.log(details, data);
+    alert("Transaction Completed");
   };
 
   registerEmail = emailAddress => {
@@ -84,11 +84,14 @@ class NewsletterForm extends Component {
             </p>
           </div>
         )}
-        <PayPalBtn
-          amount={1}
-          currency={"USD"}
-          onSucceess={this.paymentHandler}
-        />
+        <br />
+        <div className={"hero-form"}>
+          <PayPalBtn
+            amount={1}
+            currency={"USD"}
+            onSucceess={this.paymentHandler}
+          />
+        </div>
       </div>
     );
   }
