@@ -1,5 +1,5 @@
-import React from 'react';
-import Layout from '../layouts/index';
+import React from "react";
+import Layout from "../layouts/index";
 
 const FaqsPage = () => {
   return (
@@ -13,11 +13,23 @@ const FaqsPage = () => {
                   <h1 className="entry-title">FAQ's</h1>
                 </header>
 
-                <div className="entry-body">
-                  <h3>얼마인가요?</h3>
-                  <p>무료입니다.</p>
-                  <h3>어떤 서비스인가요?</h3>
-                  <p>메일로 공부하기 좋은 한글 기사와 문장을 보내드립니다.</p>
+                <div className="entry-body" style={{ wordBreak: "keep-all" }}>
+                  <h3>한글 공부는 얼마인가요?</h3>
+                  <p>기본적으로 무료 서비스입니다.</p>
+                  <p>
+                    1개월에 1달러($1/month)를 내면 한글 교정 서비스를 추가로
+                    받을 수 있습니다.
+                  </p>
+                  <hr />
+                  <h3>한글 교정 서비스는 어떻게 받나요?</h3>
+                  <p>
+                    PayPal로 결제를 하면, PayPal에 등록된 이메일로 한글 교정
+                    서비스 등록 코드가 발급됩니다. (예: 홍길동전용코드)
+                  </p>
+                  <p>
+                    해당 코드를 service@learnkorean.cc로 보내주시면, 저희가
+                    답변을 드리고, 무제한 한글 교정 서비스가 시작됩니다.
+                  </p>
                 </div>
               </div>
             </div>

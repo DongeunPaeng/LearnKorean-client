@@ -14,7 +14,7 @@ const SupportPage = () => {
                 </header>
 
                 <div className="entry-body">
-                  <p>궁금한 게 있으시면 언제든 연락 주세요.</p>
+                  <p>service@learnkorean.cc</p>
                 </div>
               </div>
             </div>

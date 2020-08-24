@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="site-footer-inner">
           <NavLinks className="footer-links" />
           {/*<SocialLinks className="footer-social-links" />*/}
-          <div className="footer-copyright">&copy; 2020 팽박사 한글 교실, all rights reserved</div>
+          <div className="footer-copyright">&copy; 2020 한글 공부, all rights reserved</div>
         </div>
       </div>
     </footer>

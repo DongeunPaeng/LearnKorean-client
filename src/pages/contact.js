@@ -14,8 +14,7 @@ const ContactPage = () => {
                 </header>
 
                 <div className="entry-body">
-                  <p>dongeun.paeng@gmail.com</p>
-                  <p>+82-10-8970-6479</p>
+                  <p>service@learnkorean.cc</p>
                 </div>
               </div>
             </div>

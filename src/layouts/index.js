@@ -7,7 +7,7 @@ import Footer from '../components/layout/Footer';
 const Layout = (props) => {
   return (
     <div className="body-wrap boxed-container">
-      <Header title="팽박사 한글 교실" />
+      <Header title="한글 공부" />
       <Main>
         {props.children}
       </Main>
