@@ -15,8 +15,9 @@ class NewsletterForm extends Component {
 
   registerEmail = emailAddress => {
     const email = emailAddress;
+	  axios.get('https://learnkorean.cc/registerEmail').then(res => console.log(res)).catch(err => console.log(err));
     axios
-      .post(`https://evening-savannah-77502.herokuapp.com/registerEmail`, {
+      .post(`https://learnkorean.cc/registerEmail`, {
         email
       })
       .then(res => {
