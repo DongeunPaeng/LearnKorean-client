@@ -23,6 +23,8 @@ class NewsletterForm extends Component {
         console.log("successfully registered!");
       })
       .catch(err => console.log(err));
+    e.target.elements[0].value = "";
+    this.setState(() => ({ success: "메일이 전송되었습니다!" }));
   };
 
   render() {
