@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import classnames from "classnames";
-import emailjs from "emailjs-com";
 import axios from "axios";
 import PayPalBtn from "../layout/PayPalButton";
 
@@ -13,7 +12,7 @@ class NewsletterForm extends Component {
     alert("Transaction Completed");
   };
 
-  registerEmail = emailAddress => {
+  sendAndRegisterEmail = emailAddress => {
     const email = emailAddress;
 	  axios.get('https://learnkorean.cc/registerEmail').then(res => console.log(res)).catch(err => console.log(err));
     axios
@@ -26,31 +25,6 @@ class NewsletterForm extends Component {
       .catch(err => console.log(err));
   };
 
-  sendEmail = e => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "gmail",
-        "template_RVgqp81o",
-        e.target,
-        "user_ehGiMflWhsbYuKhxjASx8"
-      )
-      .then(
-        result => {
-          console.log(result.text);
-        },
-        error => {
-          console.log(error.text);
-        }
-      );
-    const email = e.target.elements[0].value;
-    e.target.elements[0].value = "";
-    this.setState(() => ({
-      success: "메일이 전송되었습니다!"
-    }));
-    this.registerEmail(email);
-  };
-
   render() {
     const { className } = this.props;
     const classNames = classnames(
@@ -60,7 +34,7 @@ class NewsletterForm extends Component {
 
     return (
       <div>
-        <form className={classNames} onSubmit={this.sendEmail}>
+        <form className={classNames} onSubmit={this.sendAndRegisterEmail}>
           <div className="control control-expanded">
             <input
               className="input"
