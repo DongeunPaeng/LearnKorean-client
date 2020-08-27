@@ -12,9 +12,9 @@ class NewsletterForm extends Component {
     alert("Transaction Completed");
   };
 
-  sendAndRegisterEmail = emailAddress => {
-    const email = emailAddress;
-	  axios.get('https://learnkorean.cc/registerEmail').then(res => console.log(res)).catch(err => console.log(err));
+  sendAndRegisterEmail = e => {
+    e.preventDefault();
+    const email = e.target.elements[0].value;
     axios
       .post(`https://learnkorean.cc/registerEmail`, {
         email
