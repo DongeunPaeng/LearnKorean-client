@@ -6,7 +6,6 @@ export default (props) => {
   const links = [
     { text: "PRO SERVICE", href: "/premium" },
     { text: "Contact", href: "/contact" },
-    { text: "FAQ's", href: "/faqs" },
     { text: "Terms", href: "/terms" },
   ];
 
