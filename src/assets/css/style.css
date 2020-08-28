@@ -1075,7 +1075,7 @@ label {
 # Hero
 --------------------------------------------------------------*/
 .hero {
-  text-align: center; }
+  text-align: left; }
 
 .hero-inner {
   position: relative;

@@ -8,7 +8,7 @@ const HeroIllustration = () => {
       </div>
       <div className="hero-illustration-browser is-revealing">
         <img
-          src="https://images.unsplash.com/photo-1526199119161-4be1e3368d52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+          src="/sample.png"
           alt="alt"
           style={{
             boxShadow:
