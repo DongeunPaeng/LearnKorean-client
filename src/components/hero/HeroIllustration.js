@@ -4,7 +4,7 @@ const HeroIllustration = () => {
   return (
     <Fragment>
       <div className="hero-squares hero-squares-1 is-revealing">
-        <span style={{ color: "white" }}>반갑습니다!</span>
+        <span style={{ color: "white" }}>서비스 예시</span>
       </div>
       <div className="hero-illustration-browser is-revealing">
         <img

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import classnames from "classnames";
 import axios from "axios";
-import PayPalBtn from "../layout/PayPalButton";
 
 class NewsletterForm extends Component {
   state = {
@@ -28,7 +27,7 @@ class NewsletterForm extends Component {
   };
 
   render() {
-    const { className } = this.props;
+    const { className, submit } = this.props;
     const classNames = classnames(
       "contact-form field field-grouped is-revealing",
       className
@@ -49,10 +48,13 @@ class NewsletterForm extends Component {
             <input
               className="button button-primary button-block button-shadow"
               type="submit"
-              value="메일로 한글 배우기"
+              value={submit}
             />
           </div>
         </form>
+        <p style={{ marginLeft: "15px", marginTop: "5px", fontSize: "15px" }}>
+          하루 한 번, 한글 실력을 키우세요.
+        </p>
         {this.state.success && (
           <div>
             <br />
@@ -61,14 +63,6 @@ class NewsletterForm extends Component {
             </p>
           </div>
         )}
-        <br />
-        <div className={"hero-form"}>
-          <PayPalBtn
-            amount={1}
-            currency={"USD"}
-            onSucceess={this.paymentHandler}
-          />
-        </div>
       </div>
     );
   }
