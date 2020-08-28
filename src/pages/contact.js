@@ -10,11 +10,11 @@ const ContactPage = () => {
             <div className="entry-content">
               <div className="container-sm">
                 <header className="entry-header">
-                  <h1 className="entry-title">Contact</h1>
+                  <h3 className="entry-title">Contact Us</h3>
                 </header>
 
                 <div className="entry-body">
-                  <p>service@learnkorean.cc</p>
+                  <p><strong>service@learnkorean.cc</strong>로 무엇이든 물어보세요.</p>
                 </div>
               </div>
             </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../layouts/index";
-import PayPalBtn from "../components/layout/PayPalButton"
+import PayPalBtn from "../components/layout/PayPalButton";
 
-const AboutPage = () => {
+const PremiumPage = () => {
   return (
     <Layout>
       <article className="entry">
@@ -11,20 +11,29 @@ const AboutPage = () => {
             <div className="entry-content">
               <div className="container-sm">
                 <header className="entry-header">
-                  <h1 className="entry-title">About</h1>
+                  <h3 className="entry-title mt-0">PRO SERVICE</h3>
                 </header>
                 <div className="entry-body" style={{ wordBreak: "keep-all" }}>
                   <p>
-                    한글 공부는 한글을 배우고자 하는 사람들을 위한 무료 한글
-                    메일 발송 서비스입니다.
+                    부담 없는 PRO SERVICE로 한글 실력을 쉽게 향상시켜보세요.
+                    <br />
+                    PRO SERVICE는 1개월에 1달러입니다. (
+                    <strong>$1/month</strong>)
                   </p>
                   <p>
-                    이메일을 등록하면 일주일에 두 번, 한글로 된 짧은 글들을
-                    보내드립니다.
+                    PayPal 결제를 누르면 구독 서비스(subscription) 가입 절차가
+                    시작됩니다.
+                    <br />
+                    결제가 완료된 이용자에게는 PRO SERVICE 이메일이 발송됩니다.
                   </p>
-                  <hr />
-                  <h3>유료 서비스 안내</h3>
-                  <p>1개월에 1달러($1/month)를 내고, 한글 교정 서비스가 포함된 유료 서비스에 가입해보세요.</p>
+                  <p>
+                    PRO SERVICE 이용자는 무료 이용자와 달리, 매주 발송되는
+                    이메일에 학습 내용이 추가됩니다.
+                  </p>
+                  <p>
+                    단어, 표현에 대한 설명뿐 아니라, '한글 공부' 운영진에게
+                    첨삭(paper review/comment service)을 요청할 수도 있습니다.
+                  </p>
                 </div>
                 <br />
                 <PayPalBtn />
@@ -47,4 +56,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default PremiumPage;

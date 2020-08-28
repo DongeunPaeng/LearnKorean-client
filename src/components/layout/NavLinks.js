@@ -4,10 +4,10 @@ import classnames from 'classnames';
 
 export default (props) => {
   const links = [
+    { text: "PRO SERVICE", href: "/premium" },
     { text: "Contact", href: "/contact" },
-    { text: "About Us", href: "/about" },
     { text: "FAQ's", href: "/faqs" },
-    { text: "Support", href: "/support" },
+    { text: "Terms", href: "/terms" },
   ];
 
   const classNames = classnames(
@@ -16,7 +16,7 @@ export default (props) => {
   )
 
   return (
-    <ul className={classNames}>
+    <ul className={classNames} style={{fontSize: '18px'}}>
       {links.map((link, index) => (
         <li key={index}>
           <NavLink to={link.href} activeClassName="is-active">{link.text}</NavLink>

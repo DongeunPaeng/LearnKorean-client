@@ -35,7 +35,7 @@ class Hero extends Component {
                     <li key={1}>메일 주소를 등록한다.</li>
                     <li key={2}>문장을 따라 읽고, 궁금한 점은 메일로 물어본다.</li>
                     <li key={3}>
-                      <strong>(PRO)</strong> 5줄 이상, 단어와 고급 표현에 대한
+                      <strong>(PRO)</strong> 단어와 고급 표현에 대한
                       설명이 포함된 글로 실력을 한 단계 상승한다.
                     </li>
                   </ul>
