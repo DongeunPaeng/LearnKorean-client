@@ -7,19 +7,16 @@ class NewsletterForm extends Component {
     success: undefined
   };
 
-  paymentHandler = (details, data) => {
-    alert("Transaction Completed");
-  };
-
   sendAndRegisterEmail = e => {
     e.preventDefault();
     const email = e.target.elements[0].value;
     axios
       .post(`https://learnkorean.cc/registerEmail`, {
-        email
+        email,
+        pro: this.props.pro ? 1 : 0
       })
       .then(res => {
-        console.log("successfully registered!");
+        console.log("Successfully registered!");
       })
       .catch(err => console.log(err));
     e.target.elements[0].value = "";
@@ -27,7 +24,7 @@ class NewsletterForm extends Component {
   };
 
   render() {
-    const { className, submit } = this.props;
+    const { className, submit, from } = this.props;
     const classNames = classnames(
       "contact-form field field-grouped is-revealing",
       className
