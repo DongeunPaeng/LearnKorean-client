@@ -1262,9 +1262,9 @@ main {
     padding: 8px; }
 
 .footer-links a {
-  color: #FFF; }
+  color: #9BACBD; }
   .footer-links a:hover {
-    color: #FFF; }
+    color: #9BACBD; }
 
 @media (min-width: 641px) {
   .site-footer-inner {
@@ -1282,8 +1282,14 @@ main {
     justify-content: flex-end; }
   .footer-links {
     order: 1;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+    .footer-links a {
+      color: #FFF; }
+      .footer-links a:hover {
+        color: #FFF; } }
 
 @media (max-width: 1024px) {
   .footer-copyright {
-    color: #FFF; } }
+    color: #9BACBD; }
+  .footer-links a {
+    color: #9BACBD; } }
