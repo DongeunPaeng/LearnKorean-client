@@ -1,27 +1,34 @@
-import React from "react";
-import { PayPalButton } from "react-paypal-button-v2";
+import React, { Component } from "react";
 
-export default class PayPalBtn extends React.Component {
+export default class PayPalBtn extends Component {
+  makePayPalButton = () => {
+    window.paypal
+      .Buttons({
+        style: {
+          shape: "rect",
+          color: "blue",
+          layout: "vertical",
+          label: "subscribe"
+        },
+        createSubscription: function(data, actions) {
+          return actions.subscription.create({
+            plan_id: "P-8BG03646BY414914GL5FDVAY"
+          });
+        },
+        onApprove: function(data, actions) {
+          alert(data.subscriptionID);
+        }
+      })
+      .render("#paypal-button-container");
+  };
+  componentDidMount() {
+    this.makePayPalButton();
+  }
   render() {
     return (
-      <PayPalButton
-        amount="1"
-        currency="USD"
-        shippingPreference="NO_SHIPPING"
-        onSuccess={(details, data) => {
-          alert("Transaction completed by " + details.payer.name.given_name);
-          return fetch("/paypal-transaction-complete", {
-            method: "post",
-            body: JSON.stringify({
-              orderId: data.orderID
-            })
-          });
-        }}
-        options={{
-          clientId:
-            "AUObFM4MpyAuxnhGanuWGWJ_HF9uSf-bnuQlPqLpHOuAcygfz5cm7vrAzGB7wSnrTOyVrYraD15j6mKg"
-        }}
-      />
+      <div>
+        <div id="paypal-button-container"></div>
+      </div>
     );
   }
 }
