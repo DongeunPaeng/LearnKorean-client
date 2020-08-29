@@ -1261,11 +1261,6 @@ main {
   .footer-social-links li a {
     padding: 8px; }
 
-.footer-links a {
-  color: #9BACBD; }
-  .footer-links a:hover {
-    color: #9BACBD; }
-
 @media (min-width: 641px) {
   .site-footer-inner {
     justify-content: space-between; }
@@ -1286,10 +1281,18 @@ main {
     .footer-links a {
       color: #FFF; }
       .footer-links a:hover {
-        color: #FFF; } }
+        color: #FFF; }
+  .footer-gray-color a {
+    color: #FFF; }
+    .footer-gray-color a:hover {
+      color: #FFF; } }
 
 @media (max-width: 1024px) {
   .footer-copyright {
-    color: #9BACBD; }
+    color: #FFF; }
   .footer-links a {
-    color: #9BACBD; } }
+    color: #FFF; }
+  .footer-gray-color {
+    color: #9BACBD; }
+    .footer-gray-color a {
+      color: #9BACBD; } }

@@ -54,16 +54,6 @@
   }
 }
 
-.footer-links {
-  a {
-    color: color(typography, 3);
-
-    &:hover {
-      color: color(typography, 3);
-    }
-  }
-}
-
 @include media(">medium") {
   .site-footer-inner {
     justify-content: space-between;
@@ -99,13 +89,29 @@
       }
     }
   }
+
+  .footer-gray-color {
+    a {
+      color: color(typography, 1i);
+
+      &:hover {
+        color: color(typography, 1i);
+      }
+    }
+  }
 }
 
 @include media("<=large") {
   .footer-copyright {
-    color: color(typography, 3);
+    color: color(typography, 1i);
   }
   .footer-links {
+    a {
+      color: color(typography, 1i);
+    }
+  }
+  .footer-gray-color {
+    color: color(typography, 3);
     a {
       color: color(typography, 3);
     }

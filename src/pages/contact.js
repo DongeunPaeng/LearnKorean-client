@@ -1,9 +1,9 @@
-import React from 'react';
-import Layout from '../layouts/index';
+import React from "react";
+import Layout from "../layouts/index";
 
 const ContactPage = () => {
   return (
-    <Layout>
+    <Layout className="footer-gray-color">
       <article className="entry">
         <div className="container">
           <div className="entry-inner">
@@ -14,7 +14,10 @@ const ContactPage = () => {
                 </header>
 
                 <div className="entry-body">
-                  <p><strong>service@learnkorean.cc</strong>로 무엇이든 물어보세요.</p>
+                  <p>
+                    <strong>service@learnkorean.cc</strong>로 무엇이든
+                    물어보세요.
+                  </p>
                 </div>
               </div>
             </div>

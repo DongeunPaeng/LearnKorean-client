@@ -3,7 +3,7 @@ import Layout from "../layouts/index";
 
 const TermsPage = () => {
   return (
-    <Layout>
+    <Layout className="footer-gray-color">
       <article className="entry">
         <div className="container">
           <div className="entry-inner">
