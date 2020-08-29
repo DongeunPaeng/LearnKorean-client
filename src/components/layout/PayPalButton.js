@@ -19,7 +19,7 @@ export default class PayPalBtn extends React.Component {
         }}
         options={{
           clientId:
-            "ATSQlgjK7gxTkbKtqvY8hvufgP9uZyWAL8zSFLdfw56gIrR_I5X2vRMeFmXRHXwSP8vgmhnK5_iB8kEO"
+            "AUObFM4MpyAuxnhGanuWGWJ_HF9uSf-bnuQlPqLpHOuAcygfz5cm7vrAzGB7wSnrTOyVrYraD15j6mKg"
         }}
       />
     );
