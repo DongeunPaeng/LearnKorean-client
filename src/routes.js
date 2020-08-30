@@ -6,6 +6,7 @@ import PremiumPage from "./pages/premium";
 import TermsPage from "./pages/terms";
 import IndexPage from "./pages";
 import ThanksPage from "./pages/thanks";
+import ByePage from "./pages/bye";
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
           <Route exact path="/terms" component={TermsPage} />
           <Route exact path="/" component={IndexPage} />
           <Route exact path="/thanks" component={ThanksPage} />
+          <Route exact path="/bye" component={ByePage} />
         </Switch>
       </Router>
     );
