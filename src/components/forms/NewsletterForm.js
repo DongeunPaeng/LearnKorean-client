@@ -11,7 +11,7 @@ class NewsletterForm extends Component {
     e.preventDefault();
     const email = e.target.elements[0].value;
     axios
-      .post(`https://learnkorean.cc/registerEmail`, {
+      .post(`https://learnkorean.cc/api/registerEmail`, {
         email,
         pro: this.props.pro ? 1 : 0
       })
