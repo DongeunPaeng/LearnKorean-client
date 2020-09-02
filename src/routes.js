@@ -7,6 +7,7 @@ import TermsPage from "./pages/terms";
 import IndexPage from "./pages";
 import ThanksPage from "./pages/thanks";
 import ByePage from "./pages/bye";
+import AdminPage from "./pages/admin";
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route exact path="/" component={IndexPage} />
           <Route exact path="/thanks" component={ThanksPage} />
           <Route exact path="/bye" component={ByePage} />
+          <Route exact path="/admin" component={AdminPage} />
         </Switch>
       </Router>
     );

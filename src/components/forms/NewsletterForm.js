@@ -50,7 +50,8 @@ class NewsletterForm extends Component {
           </div>
         </form>
         <p style={{ marginLeft: "15px", marginTop: "5px", fontSize: "15px" }}>
-          하루 한 번, 한글 실력을 키우세요.<br />
+          하루 한 번, 한글 실력을 키우세요.
+          <br />
           중복 가입의 경우 기존 서비스가 유지됩니다.
         </p>
         {this.state.success && (
