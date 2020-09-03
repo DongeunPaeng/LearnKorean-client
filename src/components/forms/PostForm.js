@@ -1,8 +1,4 @@
 import React, { Component } from "react";
-import { MDBInput } from "mdbreact";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "bootstrap-css-only/css/bootstrap.min.css";
-import "mdbreact/dist/css/mdb.css";
 import axios from "axios";
 
 class PostForm extends Component {
@@ -19,7 +15,7 @@ class PostForm extends Component {
     const post = event.target.elements[0].value;
     console.log(post);
     axios
-      .post("http://localhost:9000/api/registerPost", {
+      .post("https://learnkorean.cc/api/registerPost", {
         post
       })
       .then(res => {
@@ -32,7 +28,7 @@ class PostForm extends Component {
 
   handleClick() {
     axios
-      .get("http://localhost:9000/api/registerPost")
+      .get("https://learnkorean.cc/api/registerPost")
       .then(res => this.setState({ data: res.data }))
       .catch(err => console.log(err));
   }
@@ -41,7 +37,7 @@ class PostForm extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <MDBInput type="textarea" label="Post" rows="5" />
+          <input type="textarea" label="Post" rows="5" cols="50" />
           <input
             className="button button-primary button-shadow button-block"
             type="submit"
