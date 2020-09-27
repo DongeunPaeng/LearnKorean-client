@@ -24,8 +24,8 @@ class PremiumPage extends Component {
                     <p>PRO 가입 절차:</p>
                     <ul style={{ fontSize: "16px" }}>
                       <li>
-                        PRO SERVICE는 1개월에 1달러입니다. (
-                        <strong>$1/month</strong>)
+                        PRO SERVICE는 1개월에 2달러입니다. (
+                        <strong>$2/month</strong>)
                       </li>
                       <li>
                         PayPal 결제를 누르면 구독 서비스(subscription) 가입
@@ -55,7 +55,7 @@ class PremiumPage extends Component {
                   </div>
                   <br />
                   <span style={{ fontSize: "30px", color: "black" }}>
-                    <strong>$1.00 </strong>
+                    <strong>$2.00 </strong>
                   </span>
                   <span>USD</span>
                   <br />
